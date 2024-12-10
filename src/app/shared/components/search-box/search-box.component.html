@@ -1,0 +1,11 @@
+<label for="hiddenLabel" class="visually-hidden">zzz</label>
+
+<input
+  type="text"
+  (keyup.enter)="emitValue(txtSearchInput.value)"
+  (keyup)="emitValue(txtSearchInput.value)"
+  [placeholder]="placeholder"
+  class="form-control"
+  #txtSearchInput
+  id="hiddenLabel"
+>
